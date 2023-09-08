@@ -4,14 +4,17 @@
  *
  * Return: Always 0 (Success)
  */
+#include <stdio.h>
+
 int main(void)
 {
+    char c;
 
-	char c;
+    for (c = 'a'; c <= 'z'; c++)
+        putchar(c);
 
-	for (c = 'a'; c <= 'z'; c++){
-		putchar(c);
-		putchar('\n');}
+    putchar('\n');
 
-	return (0);
+    return (0);
 }
+
